@@ -1,6 +1,6 @@
 body {
 	padding-bottom: 20px;
-	background-color: darkgray;
+	background-color: #cecece;
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -15,12 +15,12 @@ body {
 
 	.content img {
 		display: block;
-		max-width:700px;
-		margin-left: auto;
-		margin-right: auto;
+		max-width:100%;
+		max-height:100vh;
+		margin: auto;
 	}
 
-img {
+.gif img {
 	width: 100%;
 	height: auto;
 }
@@ -50,11 +50,11 @@ img {
 		text-decoration: none;
 	}
 
-.header li a:hover:not(.active) {
+.header li a:hover:not(.myName) {
 background-color: #111;
 }
 
-	.header .active {
+	.header .myName {
 		color:#4f4b4b;
 		background-color: #ffc371;
 	}
@@ -87,3 +87,21 @@ input[type=submit] {
 	input[type=submit]:hover {
 		background-color: #bf945a;
 	}
+
+.lg-icon {
+	display: inline-block;
+}
+
+.sm-icon {
+	display: none;
+}
+
+@media screen and (max-width: 500px) {
+	.lg-icon {
+		display: none;
+	}
+
+	.sm-icon {
+		display: inline-block;
+	}
+}
