@@ -1,12 +1,25 @@
 body {
-	padding-bottom: 20px;
+	padding: 4px;
 	background-color: #cecece;
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
+.feed {
+	width: 25%;
+	min-width: 250px;
+	float: right;
+}
+
+.social-widget {
+	max-width:400px;
+	float:inherit;
+}
+
 .content {
-	max-width: 100%;
-	padding: 0 15px 15px 15px;
+	float: left;
+	width: 100%;
+	padding-right: 8px;
+	padding-bottom: 8px;
 }
 
 .welcomeMessage {
@@ -25,11 +38,6 @@ body {
 	height: auto;
 }
 
-
-.header {
-	padding: 15px;
-}
-
 .header ul {
 	list-style-type: none;
 	margin: 0;
@@ -40,6 +48,10 @@ body {
 
 .header li {
 	float: left;
+}
+
+.header .right-menu-items {
+	float:right;
 }
 
 	.header li a {
@@ -103,5 +115,21 @@ input[type=submit] {
 
 	.sm-icon {
 		display: inline-block;
+	}
+
+	.feed {
+		width: 100%;
+		float: left;
+		padding: 8px;
+	}
+
+	.content {
+		float: left;
+		width: 100%;
+		padding: 8px;
+	}
+
+	.social-widget {
+		float: inherit;
 	}
 }
