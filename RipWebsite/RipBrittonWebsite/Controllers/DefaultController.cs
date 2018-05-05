@@ -1,16 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+using System.Web;
+using System.Web.Mvc;
 
-namespace RipWebsite.Controllers
+namespace RipBrittonWebsite.Controllers
 {
-
     public class DefaultController : Controller
     {
         [Route("")]
-        public IActionResult Index()
+        public ActionResult Index()
         {
             return View();
         }
