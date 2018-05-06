@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using RipCore.Services;
 using System.Web.Mvc;
 
 namespace RipBrittonWebsite.Controllers
@@ -11,6 +8,7 @@ namespace RipBrittonWebsite.Controllers
         [Route("")]
         public ActionResult Index()
         {
+            var openDotaApi = new OpenDotaApi(System.Configuration.ConfigurationManager.AppSettings.Get("DotaId"));
             return View();
         }
 
