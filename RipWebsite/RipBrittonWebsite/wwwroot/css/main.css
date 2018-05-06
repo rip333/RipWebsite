@@ -4,6 +4,11 @@ body {
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
+h2 {
+	font-weight: 100;
+	font-size: 1.25em;
+}
+
 .feed {
 	width: 25%;
 	min-width: 250px;
@@ -11,27 +16,32 @@ body {
 }
 
 .social-widget {
-	max-width:400px;
-	float:inherit;
+	max-width: 400px;
+	float: inherit;
+}
+
+.full-page {
+	float: left;
+	width: 100%;
+	padding: 12px;
 }
 
 .content {
 	float: left;
-	width: 100%;
-	padding-right: 8px;
-	padding-bottom: 8px;
+	width: 70%;
+	padding: 12px;
 }
 
 .welcomeMessage {
 	text-align: center;
 }
 
-	.content img {
-		display: block;
-		max-width:100%;
-		max-height:100vh;
-		margin: auto;
-	}
+img {
+	display: block;
+	max-width: 100%;
+	max-height: 100vh;
+	margin: auto;
+}
 
 .gif img {
 	width: 100%;
@@ -51,54 +61,54 @@ body {
 }
 
 .header .right-menu-items {
-	float:right;
+	float: right;
 }
 
-	.header li a {
-		display: block;
-		color: white;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-	}
-
-.header li a:hover:not(.myName) {
-background-color: #111;
+.header li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
 }
 
-	.header .myName {
-		color:#4f4b4b;
-		background-color: #ffc371;
+	.header li a:hover:not(.myName) {
+		background-color: #111;
 	}
+
+.header .myName {
+	color: #4f4b4b;
+	background-color: #ffc371;
+}
 
 input {
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
-input[type=text], select {
-	width: 70%;
-	padding: 12px 20px;
-	margin: 8px 0;
-	display: inline-block;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-}
-
-input[type=submit] {
-	width: 25%;
-	background-color: #ffc371;
-	color: white;
-	padding: 12px 20px;
-	margin: 8px 0;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-}
-
-	input[type=submit]:hover {
-		background-color: #bf945a;
+	input[type=text], select {
+		width: 70%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
 	}
+
+	input[type=submit] {
+		width: 25%;
+		background-color: #ffc371;
+		color: white;
+		padding: 12px 20px;
+		margin: 8px 0;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+		input[type=submit]:hover {
+			background-color: #bf945a;
+		}
 
 .lg-icon {
 	display: inline-block;

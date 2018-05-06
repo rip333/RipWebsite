@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewBag.Title</title>
-    <link href="wwwroot/css/main.css?v=1.02" rel="stylesheet" type="text/css" />
+    <link href="~/wwwroot/css/main.css" rel="stylesheet" type="text/css" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
@@ -12,38 +12,25 @@
 <body>
     <div class="header">
         <ul>
-            <li><a class="myName" href="http://ripbritton.com">
-                <span class="lg-icon">RIPBRITTON.COM</span>
-                <span class="sm-icon">RIP</span>
-            </a></li>
+            <li class="myName">
+                <span class="lg-icon">@Html.ActionLink("RIPBRITTON.COM", "Index", "Default", "", new { @class="myName" })</span>
+                <span class="sm-icon">@Html.ActionLink("RIP", "Index", "Default", "", new { @class = "myName" })</span>
+            </li>
+            <li>@Html.ActionLink("Music","Index","Music")</li>
             <li class="right-menu-items"><a href="https://github.com/rip333"><i class="fab fa-github-alt" aria-hidden="true"></i></a></li>
-            <li class="right-menu-items" style="height:47px;"><a href="https://www.opendota.com/players/29858594">
-                <span class="lg-icon">&lt;OpenDota/&gt;</span>
-                <span class="sm-icon"><img width="20" height="20" src="~/images/dota-icon.png" /></span>
-                 </a></li>
+            <li class="right-menu-items" style="height:47px;">
+                <a href="https://www.opendota.com/players/29858594">
+                    <span class="lg-icon">&lt;OpenDota/&gt;</span>
+                    <span class="sm-icon"><img width="20" height="20" src="~/wwwroot/images/dota-icon.png" /></span>
+                </a>
+            </li>
             <li class="right-menu-items"><a href="https://twitter.com/ripbritton?ref_src=twsrc%5Etfw"><i class="fab fa-twitter"></i></a></li>
             <li class="right-menu-items"><a href="https://discord.gg/ySUgSru"><i class="fab fa-discord"></i></a></li>
+            <li class="right-menu-items"><a href="https://open.spotify.com/user/1236799253?si=Lg8HXvIKTcKVcjZ4AGdvLQ"><i class="fab fa-spotify"></i></a></li>
         </ul>
     </div>
-    <div style="padding:8px 4px;">
+    <div>
         @RenderBody()
     </div>
-    <environment names="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-    </environment>
-    <environment names="Staging,Production">
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery">
-        </script>
-        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
-                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
-        </script>
-        <script src="~/js/site.min.js" asp-append-version="true"></script>
-    </environment>
-    @RenderSection("scripts", required: false)
 </body>
 </html>
