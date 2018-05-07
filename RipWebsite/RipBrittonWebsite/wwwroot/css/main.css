@@ -9,10 +9,19 @@ h2 {
 	font-size: 1.25em;
 }
 
+.right {
+	float:right;
+}
+
 .feed {
-	width: 25%;
-	min-width: 250px;
+	width: 30%;
+	overflow: hidden;
 	float: right;
+	max-width: 300px;
+}
+
+.wrapper {
+	overflow: auto;
 }
 
 .social-widget {
@@ -29,7 +38,6 @@ h2 {
 .content {
 	float: left;
 	width: 70%;
-	padding: 12px;
 }
 
 .welcomeMessage {
@@ -118,7 +126,7 @@ input {
 	display: none;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 850px) {
 	.lg-icon {
 		display: none;
 	}
@@ -127,16 +135,9 @@ input {
 		display: inline-block;
 	}
 
-	.feed {
+	.feed, .content {
 		width: 100%;
 		float: left;
-		padding: 8px;
-	}
-
-	.content {
-		float: left;
-		width: 100%;
-		padding: 8px;
 	}
 
 	.social-widget {
