@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewBag.Title</title>
-    <link href="~/wwwroot/css/main.css?v=1.03" rel="stylesheet" type="text/css" />
+    <link href="~/wwwroot/css/main.css?v=1.04" rel="stylesheet" type="text/css" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
@@ -13,20 +13,22 @@
     <div class="header">
         <ul>
             <li class="myName">
-                <span class="lg-icon">@Html.ActionLink("RIPBRITTON.COM", "Index", "Default", "", new { @class="myName" })</span>
+                <span class="lg-icon">@Html.ActionLink("RIPBRITTON.COM", "Index", "Default", "", new { @class = "myName" })</span>
                 <span class="sm-icon">@Html.ActionLink("RIP", "Index", "Default", "", new { @class = "myName" })</span>
             </li>
-            <li>@Html.ActionLink("Music","Index","Music")</li>
-            <li class="right-menu-items"><a href="https://github.com/rip333"><i class="fab fa-github-alt" aria-hidden="true"></i></a></li>
+            <li>@Html.ActionLink("Music", "Index", "Music")</li>
+            <li>@Html.ActionLink("Video Games", "Index", "VideoGames")</li>
+            <li class="right-menu-items"><a title="Github" href="https://github.com/rip333"><i class="fab fa-github-alt" aria-hidden="true"></i></a></li>
             <li class="right-menu-items" style="height:47px;">
                 <a href="https://www.opendota.com/players/29858594">
                     <span class="lg-icon">&lt;OpenDota/&gt;</span>
                     <span class="sm-icon"><img width="20" height="20" src="~/wwwroot/images/dota-icon.png" /></span>
                 </a>
             </li>
-            <li class="right-menu-items"><a href="https://twitter.com/ripbritton?ref_src=twsrc%5Etfw"><i class="fab fa-twitter"></i></a></li>
-            <li class="right-menu-items"><a href="https://discord.gg/ySUgSru"><i class="fab fa-discord"></i></a></li>
-            <li class="right-menu-items"><a href="https://open.spotify.com/user/1236799253?si=Lg8HXvIKTcKVcjZ4AGdvLQ"><i class="fab fa-spotify"></i></a></li>
+            <li class="right-menu-items"><a title="Steam" href="https://steamcommunity.com/profiles/76561197990124322/"><i class="fab fa-steam-square"></i></a></li>
+            <li class="right-menu-items"><a title="Twitter" href="https://twitter.com/ripbritton?ref_src=twsrc%5Etfw"><i class="fab fa-twitter"></i></a></li>
+            <li class="right-menu-items"><a title="Discord" href="https://discord.gg/ySUgSru"><i class="fab fa-discord"></i></a></li>
+            <li class="right-menu-items"><a title="Spotify" href="https://open.spotify.com/user/1236799253?si=Lg8HXvIKTcKVcjZ4AGdvLQ"><i class="fab fa-spotify"></i></a></li>
         </ul>
     </div>
     <div>
