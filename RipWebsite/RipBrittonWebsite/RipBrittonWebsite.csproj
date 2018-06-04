@@ -154,6 +154,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\DndController.cs" />
     <Compile Include="Controllers\MusicController.cs" />
     <Compile Include="Controllers\VideoGamesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -180,6 +181,7 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Music\Index.cshtml" />
     <Content Include="Views\VideoGames\Index.cshtml" />
+    <Content Include="Views\Dnd\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -198,6 +200,10 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PokefamCore\PokefamCore.csproj">
+      <Project>{84e82761-699c-4438-92ac-648a7dc2f860}</Project>
+      <Name>PokefamCore</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RipCore\RipCore.csproj">
       <Project>{05a0ffc7-4d3f-458f-85f5-3d0adb67ccbf}</Project>
       <Name>RipCore</Name>
