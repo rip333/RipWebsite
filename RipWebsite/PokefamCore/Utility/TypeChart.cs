@@ -14,23 +14,25 @@ namespace PokefamCore.Utility
 
         public TypeChart()
         {
-            var dir = Path.GetDirectoryName(path: Assembly.GetExecutingAssembly().Location);
-            var filePath = dir + @"\TypeChart.json";
-            using (StreamReader r = new StreamReader(filePath))
+            var assembly = Assembly.GetExecutingAssembly();
+            var resourceName = "PokefamCore.TypeChart.json";
+
+            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+            using (StreamReader reader = new StreamReader(stream))
             {
-                string json = r.ReadToEnd();
+                string json = reader.ReadToEnd();
                 abilityTypes = JsonConvert.DeserializeObject<List<AbilityType>>(json);
             }
         }
 
-        public double GetModifier(TypeOf attackType, TypeOf defenderPrimaryType,
-            TypeOf defenderSecondaryType = TypeOf.Pure)
+        public double GetModifier(string attackType, string defenderPrimaryType,
+            string defenderSecondaryType = "Pure")
         {
             var abilityType = getFrom(attackType);
             return attackTypeModifier(abilityType, defenderPrimaryType) * attackTypeModifier(abilityType, defenderSecondaryType);
         }
 
-        private double attackTypeModifier(AbilityType attackType, TypeOf defenderType)
+        private double attackTypeModifier(AbilityType attackType, string defenderType)
         {
             if (attackType.Double.Contains(defenderType))
             {
@@ -47,7 +49,7 @@ namespace PokefamCore.Utility
             return 1;
         }
 
-        private AbilityType getFrom(TypeOf type)
+        private AbilityType getFrom(string type)
         {
             return abilityTypes.First(x => x.Type == type);
         }

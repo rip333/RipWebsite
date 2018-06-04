@@ -6,9 +6,9 @@ namespace PokefamCore.Models
 {
     public class AbilityType
     {
-        public TypeOf Type;
-        public List<TypeOf> Double = new List<TypeOf>();
-        public List<TypeOf> Half = new List<TypeOf>();
-        public List<TypeOf> Zero = new List<TypeOf>();
+        public String Type;
+        public List<String> Double = new List<String>();
+        public List<String> Half = new List<String>();
+        public List<String> Zero = new List<String>();
     }
 }

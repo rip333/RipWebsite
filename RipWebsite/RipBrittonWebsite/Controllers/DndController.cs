@@ -1,4 +1,5 @@
 ﻿using System.Web.Mvc;
+using Newtonsoft.Json;
 using PokefamCore.Models;
 using PokefamCore.Utility;
 
@@ -12,8 +13,14 @@ namespace RipBrittonWebsite.Controllers
             return View();
         }
 
-        public ActionResult GetModifier(TypeOf attackType, TypeOf defenderPrimaryType,
-            TypeOf defenderSecondaryType = TypeOf.Pure)
+        public ActionResult AbilityTypes()
+        {
+            var typeChart = new TypeChart();
+            return Json(typeChart.abilityTypes, JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult GetModifier(string attackType, string defenderPrimaryType,
+            string defenderSecondaryType = "Pure")
         {
             TypeChart typeChart = new TypeChart();
             var modifier = typeChart.GetModifier(attackType, defenderPrimaryType, defenderSecondaryType);

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RipCore", "RipCore\RipCore.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokefamCore", "PokefamCore\PokefamCore.csproj", "{84E82761-699C-4438-92AC-648A7DC2F860}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokefamConsole", "PokefamConsole\PokefamConsole.csproj", "{3B360C4A-C497-4EFB-B189-44472ED79C15}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{84E82761-699C-4438-92AC-648A7DC2F860}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84E82761-699C-4438-92AC-648A7DC2F860}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84E82761-699C-4438-92AC-648A7DC2F860}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B360C4A-C497-4EFB-B189-44472ED79C15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B360C4A-C497-4EFB-B189-44472ED79C15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B360C4A-C497-4EFB-B189-44472ED79C15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B360C4A-C497-4EFB-B189-44472ED79C15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
