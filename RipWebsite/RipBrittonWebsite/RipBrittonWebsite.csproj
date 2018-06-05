@@ -152,7 +152,7 @@
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\Dnd\Pokefam.jsx" />
+    <Content Include="Scripts\Dnd\TypeChart.jsx" />
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.min.js" />
     <Content Include="Scripts\esm\popper.js" />
@@ -184,7 +184,9 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="wwwroot\images\dota-icon.png" />
     <Content Include="wwwroot\css\main.css" />
   </ItemGroup>
@@ -223,6 +225,7 @@
     <Content Include="Views\Music\Index.cshtml" />
     <Content Include="Views\VideoGames\Index.cshtml" />
     <Content Include="Views\Dnd\Index.cshtml" />
+    <Content Include="Views\Dnd\TypeChart.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

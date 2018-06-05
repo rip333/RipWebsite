@@ -4,6 +4,5 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <div class="full-page">
-    <div id="content"></div>
-    <script src="@Url.Content("~/Scripts/Dnd/Pokefam.jsx")"></script>
+    @Html.ActionLink("Type Chart", "TypeChart", "Dnd")
 </div>

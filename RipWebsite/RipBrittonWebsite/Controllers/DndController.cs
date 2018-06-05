@@ -13,6 +13,11 @@ namespace RipBrittonWebsite.Controllers
             return View();
         }
 
+        public ActionResult TypeChart()
+        {
+            return View();
+        }
+
         public ActionResult AbilityTypes()
         {
             var typeChart = new TypeChart();
