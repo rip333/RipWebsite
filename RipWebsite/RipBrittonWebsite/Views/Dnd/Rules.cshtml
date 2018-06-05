@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Rules";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="full-page">
+    <h3>@Html.ActionLink("Dungeons and Dragons", "Index", "Dnd") >> @Html.ActionLink("Poke'fam", "Pokefam", "Dnd") >> Rules</h3>
+    <div>
+        <p>
+            Teams may have up to four Poke’fam.  Passive initiative determines the order, with ties being determined by a roll-off (2d6).
+        </p>
+        <p>
+            Each Poke’fam starts the fight in a position (1-4).  Your position determines where abilities can be targeted.  Unless specified by the ability, you may only target enemies/allies that are adjacent to you.  This includes abilities with multiple targets.  Example: X2 may target X1, X3, O1, O2, or O3.  X4 may only target X3, O3, or O4.
+        </p>
+        <p>
+            Attacks are rolled with 2d6 instead of 1d20.  All rolls use d6s.
+            Crits (12) deal double damage.  Attacks with multiple targets can’t crit.
+        </p>
+        <p>
+            On your turn, you may use and ability or switch places with an adjacent ally, or move to an empty adjacent space.  This includes spaces that were once occupied by an enemy.
+        </p>
+        <h4>
+            Status Effects:
+        </h4>
+        <ul>
+            <li>Poison - Take 1 poison damage at the beginning of your turn for 3 turns.</li>
+            <li>Confused - Use 1 die on attacks instead of 2 on your next turn.</li>
+            <li>Paralyzed - You can’t act next turn</li>
+        </ul>
+    </div>
+</div>

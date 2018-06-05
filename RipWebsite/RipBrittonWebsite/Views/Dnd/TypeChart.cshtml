@@ -4,6 +4,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <div class="full-page">
+    <h3>@Html.ActionLink("Dungeons and Dragons", "Index", "Dnd") >> @Html.ActionLink("Poke'fam", "Pokefam", "Dnd") >> Type Chart</h3>
     <div style="padding: 8px;">
         <div id="typechart-content"></div>
         <script src="@Url.Content("~/Scripts/Dnd/TypeChart.jsx")"></script>

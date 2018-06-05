@@ -1,5 +1,7 @@
-﻿using System.Web.Mvc;
+﻿using System.Linq;
+using System.Web.Mvc;
 using Newtonsoft.Json;
+using PokefamCore.Factory.Pokefams;
 using PokefamCore.Models;
 using PokefamCore.Utility;
 
@@ -16,6 +18,25 @@ namespace RipBrittonWebsite.Controllers
         public ActionResult TypeChart()
         {
             return View();
+        }
+
+        public ActionResult Rules()
+        {
+            return View();
+        }
+
+        [Route("/Dnd/Pokefam")]
+        public ActionResult Pokefam()
+        {
+            var pokefamList = PokeFactory.GetAll;
+            return View(pokefamList);
+        }
+
+        [Route("/Dnd/Pokefam/{id}")]
+        public ActionResult GetPokefam(int id)
+        {
+            var pokefamList = PokeFactory.GetAll;
+            return View(pokefamList.First(x => x.Id == id));
         }
 
         public ActionResult AbilityTypes()

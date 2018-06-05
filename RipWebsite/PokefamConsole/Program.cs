@@ -1,5 +1,4 @@
-﻿using PokefamCore.Utility;
-using System;
+﻿using System;
 
 namespace PokefamConsole
 {
@@ -8,7 +7,6 @@ namespace PokefamConsole
         static void Main(string[] args)
         {
             Console.WriteLine("POKEFAM");
-            var typeChart = new TypeChart();
             Console.ReadLine();
         }
     }

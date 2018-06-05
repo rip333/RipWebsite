@@ -67,7 +67,6 @@
     render() {
         return (
             <div className="typechart" id="typechart">
-                <div class="react-header">Type Chart</div>
                 {this.typeChart()}
             </div>
         );

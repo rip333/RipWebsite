@@ -197,6 +197,7 @@
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\DndController.cs" />
     <Compile Include="Controllers\MusicController.cs" />
+    <Compile Include="Controllers\PokefamController.cs" />
     <Compile Include="Controllers\VideoGamesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -226,6 +227,10 @@
     <Content Include="Views\VideoGames\Index.cshtml" />
     <Content Include="Views\Dnd\Index.cshtml" />
     <Content Include="Views\Dnd\TypeChart.cshtml" />
+    <Content Include="Views\Dnd\Pokefam.cshtml" />
+    <Content Include="Views\Dnd\Rules.cshtml" />
+    <Content Include="Views\Dnd\GetPokefam.cshtml" />
+    <Content Include="Views\Dnd\Ability.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

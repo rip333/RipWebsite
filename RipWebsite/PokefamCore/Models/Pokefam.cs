@@ -1,4 +1,7 @@
 ﻿
+using System.Collections.Generic;
+using System.Linq;
+
 namespace PokefamCore.Models
 {
     public class Pokefam
@@ -11,10 +14,18 @@ namespace PokefamCore.Models
         public TypeOf PrimaryType, SecondaryType;
         public int Level = 1;
         public int Health = 25;
-        public Ability AbilityA, AbilityB, AbilityC, AbilityD;
+        public Ability[] Abilities = { };
         public int BaseHealth = 25;
 
         public int HealthGain = 5;
         
+
+        public void CalculateHealth()
+        {
+            Health = BaseHealth + Level * HealthGain;
+        }
+
+        public List<Ability> GetLearnedAbilities() => Abilities.Where(x => x.Learned).ToList();
+
     }
 }

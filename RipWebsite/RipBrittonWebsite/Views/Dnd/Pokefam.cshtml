@@ -1,0 +1,32 @@
+﻿@model List<PokefamCore.Models.Pokefam>
+
+@{
+    ViewBag.Title = "Pokefam";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="full-page">
+    <div>
+        <h3>@Html.ActionLink("Dungeons and Dragons", "Index", "Dnd") >> Poke'fam </h3>
+        <div>
+            <ul>
+                <li>
+                    @Html.ActionLink("Type Chart", "TypeChart", "Dnd")
+                </li>
+                <li>
+                    @Html.ActionLink("Rules", "Rules", "Dnd")
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3>Poke'fam List</h3>
+            <ul>
+                @foreach (var pokefam in Model)
+                {
+                <li>
+                    @Html.ActionLink(pokefam.Name, "GetPokefam", "Dnd", new { id = pokefam.Id }, null)
+                </li>
+                }
+</ul>
+            </div>
+        </div>
+    </div>
