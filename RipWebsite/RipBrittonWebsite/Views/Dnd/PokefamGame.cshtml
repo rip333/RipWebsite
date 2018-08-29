@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "PokefamGame";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="full-page">
+    <div>
+        <h3>@Html.ActionLink("Dungeons and Dragons", "Index", "Dnd") >> @Html.ActionLink("Poke'fam", "Pokefam", "Dnd") >> Game </h3>
+        <div style="padding: 8px;">
+            <div id="pokefam-game-content"></div>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.6.6/dragula.min.css" rel="stylesheet" type="text/css" />
+            <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/16.4.0/umd/react.development.js"></script>
+            <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.0/umd/react-dom.development.js"></script>
+            <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.6.2/dragula.min.js"></script>
+            <script src="@Url.Content("~/Scripts/Dnd/PokefamGame.jsx")"></script>
+        </div>
+    </div>
+</div>

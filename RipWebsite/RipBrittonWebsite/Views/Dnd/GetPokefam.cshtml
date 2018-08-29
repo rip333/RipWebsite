@@ -8,16 +8,19 @@
 <div class="full-page">
     <h3>@Html.ActionLink("Dungeons and Dragons", "Index", "Dnd") >> @Html.ActionLink("Poke'fam", "Pokefam", "Dnd") >> @Model.Name</h3>
     <div>
-        <ul>
-            @foreach (var ability in Model.Abilities)
-            {
-            <li>
-                <h4>@ability.Name</h4>
-                <p>+ @ability.ToHit to Hit</p>
-                <p>@ability.EffectRollNumber d6 + @ability.EffectRollConstant @ability.Type damage.</p>
-                <p>@ability.Text</p>
+        <div class="feed">
+            <img id="pokefamImage" src="@Model.ImageUrl" />
+        </div>
+        <div class="content">
+            <ul>
+                @foreach (var ability in Model.Abilities)
+        {
+            <li class="pokefam-details">
+                <strong>@ability.Name</strong>
+                <p>@ability.GetDescriptionText()</p>
             </li>
-            }
-        </ul>
+}
+            </ul>
+        </div>
     </div>
 </div>

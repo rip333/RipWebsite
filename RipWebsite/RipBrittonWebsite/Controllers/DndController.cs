@@ -39,6 +39,12 @@ namespace RipBrittonWebsite.Controllers
             return View(pokefamList.First(x => x.Id == id));
         }
 
+        [Route("/Dnd/Pokefam/game")]
+        public ActionResult PokefamGame()
+        {
+            return View();
+        }
+
         public ActionResult AbilityTypes()
         {
             var typeChart = new TypeChart();

@@ -152,6 +152,7 @@
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\Dnd\PokefamGame.jsx" />
     <Content Include="Scripts\Dnd\TypeChart.jsx" />
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.min.js" />
@@ -231,6 +232,7 @@
     <Content Include="Views\Dnd\Rules.cshtml" />
     <Content Include="Views\Dnd\GetPokefam.cshtml" />
     <Content Include="Views\Dnd\Ability.cshtml" />
+    <Content Include="Views\Dnd\PokefamGame.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

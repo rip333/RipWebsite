@@ -75,5 +75,33 @@ namespace PokefamCore.Factory.Abilities
             EffectRollConstant = 7,
             Cooldown = 2
         };
+
+        public static Ability BlindingLight => new Ability()
+        {
+            Name = "Blinding Light",
+            Id = 5,
+            Type = TypeOf.Radiant,
+            Targets = 2,
+            ShouldRollEffect = false,
+            ShouldRollToHit = false,
+            ToHit = 0,
+            EffectRollNumber = 0,
+            EffectRollConstant = 0,
+            Cooldown = 1
+        };
+
+        public static Ability Flyby => new Ability()
+        {
+            Name = "Flyby",
+            Id = 6,
+            Type = TypeOf.Wind,
+            Targets = 1,
+            ShouldRollEffect = true,
+            ShouldRollToHit = true,
+            ToHit = 3,
+            EffectRollNumber = 1,
+            EffectRollConstant = 5,
+            Cooldown = 2
+        };
     }
 }

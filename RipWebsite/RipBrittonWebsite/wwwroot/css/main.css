@@ -16,7 +16,7 @@ h2 {
 
 td, th {
 	height: 28px;
-	font-stretch:semi-expanded;
+	font-stretch: semi-expanded;
 	font-size: 16px;
 	min-width: 40px;
 	border: 1px solid #ddd;
@@ -25,7 +25,7 @@ td, th {
 
 .double {
 	background-color: green;
-	color:white;
+	color: white;
 }
 
 .zero {
@@ -72,9 +72,9 @@ th {
 	margin: 0;
 }
 
-.feed-list li{
-	padding:12px;
-}
+	.feed-list li {
+		padding: 12px;
+	}
 
 .wrapper {
 	overflow: auto;
@@ -85,7 +85,7 @@ th {
 	padding-bottom: 26.25%;
 	padding-top: 25px;
 	height: 0;
-	max-width:500px;
+	max-width: 500px;
 }
 
 	.video-container iframe {
@@ -157,6 +157,26 @@ img {
 	background-color: #ffc371;
 }
 
+.pokefam-details {
+}
+
+.pk-container {
+display: -webkit-box;
+}
+
+.pk-cell {
+	height: 80px;
+	margin: 12px;
+	padding: 8px;
+	background-color: blue;
+}
+
+.pk-col {
+	width:25%;
+	padding: 20px;
+	background-color: white;
+}
+
 input {
 	font-family: 'Roboto Condensed', sans-serif;
 }
@@ -210,5 +230,13 @@ input {
 
 	.social-widget {
 		float: inherit;
+	}
+	.pk-cell {
+		width: 20%;
+		height: 80px;
+	}
+
+	.pk-table {
+		width: 100%;
 	}
 }

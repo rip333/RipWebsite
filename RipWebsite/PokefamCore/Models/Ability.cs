@@ -29,5 +29,23 @@ namespace PokefamCore.Models
         {
             return Roll.Dice(EffectRollNumber, 6, EffectRollConstant);
         }
+
+        public string GetDescriptionText()
+        {
+            var descriptionText = "";
+            if(ShouldRollToHit) {
+                descriptionText += $"+{ToHit} to Hit.  {Targets} target.  ";
+            }
+            if(ShouldRollEffect)
+            {
+                descriptionText += $"{ EffectRollNumber}d6 + { EffectRollConstant} { Type.ToString()} damage.  ";
+            }
+            descriptionText += Text;
+            if(Cooldown > 0)
+            {
+                descriptionText += $"  Cooldown {Cooldown}.";
+            }
+            return descriptionText;
+        }
     }
 }

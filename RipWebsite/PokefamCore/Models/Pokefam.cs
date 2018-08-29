@@ -16,6 +16,10 @@ namespace PokefamCore.Models
         public int Health = 25;
         public Ability[] Abilities = { };
         public int BaseHealth = 25;
+        public string ImageUrl = "";
+        public bool PlayerControlled = false;
+        public int PlayerId = -1;
+        public int Square = 1;
 
         public int HealthGain = 5;
         
